@@ -1,0 +1,8 @@
+.pie-pagina {
+  margin-top: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--borde-sutil);
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
