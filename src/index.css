@@ -1,0 +1,32 @@
+:root {
+  /* Fondos */
+  --fondo-principal: #0a0714; /* Negro con matiz morado */
+  --fondo-caja: #120d20; /* Fondo de tarjetas/recuadros */
+  --borde-sutil: rgba(168, 113, 255, 0.15);
+
+  /* Colores neón */
+  --morado-luz: #b88aff; /* Morado brillante */
+  --morado-intenso: #9d4edd;
+  --rojo-acento: #ff3366;
+
+  /* Texto */
+  --texto-blanco: #ffffff;
+  --texto-suave: #d8cfff;
+
+  /* Efectos de luz */
+  --luz-morado: 0 0 10px var(--morado-luz), 0 0 25px rgba(184, 138, 255, 0.35);
+  --luz-roja: 0 0 8px var(--rojo-acento), 0 0 20px rgba(255, 51, 102, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--fondo-principal);
+  color: var(--texto-blanco);
+  line-height: 1.6;
+}
