@@ -1,0 +1,120 @@
+.seccion-inicio {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+
+/* Contenido central */
+.contenedor-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: 70vh;
+}
+
+.bloque-texto {
+  flex: 1;
+}
+
+.titulo-principal {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.resaltado {
+  color: var(--morado-luz);
+}
+
+.descripcion {
+  font-size: 1.1rem;
+  color: var(--texto-suave);
+  margin-bottom: 2rem;
+}
+
+.grupo-botones {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.boton-transparente {
+  padding: 0.9rem 2rem;
+  background-color: transparent;
+  color: var(--texto-blanco);
+  border: 1px solid var(--borde-sutil);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-transparente:hover {
+  border-color: var(--morado-luz);
+  color: var(--morado-luz);
+  transform: translateY(-3px);
+}
+
+.bloque-imagen {
+  flex: 1;
+}
+
+.bloque-imagen img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid var(--morado-intenso);
+  box-shadow: 0 0 20px var(--morado-intenso), 0 0 40px rgba(184, 138, 255, 0.25);
+}
+.bloque-imagen img:hover{
+    transform: translateY(-3px);
+}
+
+/* Sección Nosotros */
+.seccion-nosotros {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--fondo-caja);
+  border-radius: 12px;
+  border: 1px solid var(--borde-sutil);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.icono-nosotros {
+  font-size: 2.2rem;
+  color: var(--morado-luz);
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(184, 138, 255, 0.1);
+}
+.icono-nosotros img{
+    width: 150px;
+    border-radius: 50%;
+}
+.contenedor-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-text p{
+    padding: 0 100px;
+    text-align: center;
+}
+
+.seccion-nosotros h3 {
+  color: var(--morado-luz);
+  margin-bottom: 0.5rem;
+}
+
+/* Adaptable a móviles */
+@media (max-width: 900px) {
+  .redes-laterales { display: none; }
+  .contenedor-hero { flex-direction: column; text-align: center; }
+  .titulo-principal { font-size: 2.5rem; }
+  .grupo-botones { justify-content: center; }
+  .seccion-nosotros { flex-direction: column; text-align: center; }
+}
