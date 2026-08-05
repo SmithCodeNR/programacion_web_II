@@ -1,0 +1,67 @@
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: rgba(10, 7, 20, 0.9);
+    border-bottom: 1px solid var(--borde-sutil);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--morado-luz);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(184, 138, 255, 0.4);
+}
+
+.menu-principal {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.menu-principal a {
+    color: var(--texto-suave);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-principal a:hover {
+  color: var(--morado-luz);
+  transform: translateY(-3px);
+}
+
+.menu-principal a:hover::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--morado-luz);
+    box-shadow: var(--luz-morado);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.boton-comunidad {
+    padding: 0.7rem 1.6rem;
+    background-color: transparent;
+    color: var(--morado-luz);
+    border: 1px solid var(--morado-luz);
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-comunidad:hover {
+    color: var(--texto-blanco);
+    box-shadow: var(--luz-morado);
+    transform: translateY(-3px);
+}
